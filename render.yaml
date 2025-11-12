@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-girl-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      TELEGRAM_TOKEN: 8247522522:AAEUOLdiLJbueV384P7WYILsDdyao662xGU
+      FAL_KEY: a5b144bd-d99e-406d-905f-271d36b81c5a:ad0eb67a1eff14e7b7e14922de84056c
